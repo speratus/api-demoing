@@ -1,0 +1,9 @@
+<h1>Hello <%= @user.name %></h1>
+
+<h3>Your Repos are</h3>
+
+<ul>
+  <% @repos.each do |r| %>
+    <li><%= r.name %></li>
+  <% end %>
+</ul>
